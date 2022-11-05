@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.img-container {
+    position: relative;
+}
+.equilibrium-img {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    height: auto;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 0.5rem;
+    background-color:hsl(178, 100%, 50%);
+}
+.img-container:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+h1 {
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 0.1rem solid hsl(215, 32%, 27%);
+}
+.info-container p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.eth-paragraph {
+    margin-right: auto;
+    color: hsl(178, 100%, 50%);
+}
+.creator-container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.creator-container span {
+    color: white;
+}
+span:hover {
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
+}
+.avatar-img {
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 1rem;
+}
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+    }
+}
